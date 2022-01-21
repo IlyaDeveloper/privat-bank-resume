@@ -1,0 +1,67 @@
+//* Map size devices for media query
+$wideScreens: (
+  phonesSm: 340px,
+  phones: 480px,
+  phonesLg: 640px,
+  tablet: 768px,
+  laptop: 992px,
+  desktopSm: 1024px,
+  desktopMd: 1170px,
+  desktop: 1280px,
+  notebook: 1366px,
+  notebookLg: 1600px,
+  fullHD: 1800px,
+  retina: 2100px,
+  retina4k: 3656px,
+  retina5k: 5100px,
+  retina8k: 7600px
+);
+
+$contentScale: (
+  //(
+  //    direction: 'max-width',
+  //    wide: screens(phonesSm),
+  //    scale: 92%
+  //),
+);
+
+
+$spacer: 1rem;
+$primary: #75AF26;
+$primary-dark: #5A9310;
+$secondary: #282828;
+$secondary-dark: #03b387;
+$light: #ffffff;
+$dark: #000000;
+
+//* transitions && animations
+$transition-default: 0.3s linear !default;
+$transition-border: border-color $transition-default !default;
+$transition-shadow: box-shadow $transition-default !default;
+
+$base-font-color: $dark !default;
+$base-font-size-color: 16px !default;
+
+// * images source
+$assets-path: '/assets/img/' !default;
+
+// * fonts
+$font-path: '/assets/fonts' !default;
+$font-inter-path: $font-path + '/Inter/' !default;
+$font-family-primary:  'Helvetica', 'Arial', sans-serif;
+
+$icons-font-map: (
+);
+
+// * shadows
+$sh-card: 0 rem(1) rem(40) rgba(38, 38, 38, 0.12);
+
+//* z-index
+$z-index-step: 10 !default;
+$z-index: (
+  start: 10,
+  middle: 50,
+  header: 100,
+  modal: 1000
+) !default;
+

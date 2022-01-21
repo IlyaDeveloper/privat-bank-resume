@@ -1,0 +1,100 @@
+html {
+  font-family: $font-family-primary;
+  font-size: $base-font-size-color;
+  font-weight: normal;
+  text-align: left;
+  line-height: normal;
+  letter-spacing: normal;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  //@include content-scale($contentScale);
+
+  @include min-wide(phones) {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    will-change: scroll-position;
+  }
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+
+  height: 100%;
+
+  margin: 0;
+
+  font-family: Helvetica, Arial, sans-serif;
+  color: $secondary;
+}
+
+body, .root {
+  display: flex;
+  flex-flow: column;
+  flex: 1 1;
+}
+
+ul,
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+
+  object-fit: contain;
+  object-position: center;
+}
+
+a,
+button,
+select {
+  text-decoration: none;
+
+  outline: none;
+
+  transition: all 0.2s ease-in-out;
+
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+a,
+label {
+  -webkit-tap-highlight-color: transparent;
+}
+
+mark {
+  padding: 0;
+
+  color: inherit;
+  background-color: transparent;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+figure {
+  margin: 0;
+}
+
+input {
+  appearance: none;
+}
+
+[routerLink] {
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}

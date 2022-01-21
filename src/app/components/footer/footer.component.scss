@@ -1,0 +1,25 @@
+@import "core";
+
+.__footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  align-center: center;
+  justify-content: space-between;
+  padding: $spacer;
+
+  width: 100%;
+
+  color: $light;
+  font-size:rem(18);
+
+  background: $primary;
+
+  a {
+    color: currentColor;
+    text-decoration: none;
+  }
+}

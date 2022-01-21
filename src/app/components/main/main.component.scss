@@ -1,0 +1,68 @@
+@import "core";
+
+.__wrap {
+  display: grid;
+  grid-gap: dv($spacer, 2);
+
+  padding: $spacer;
+  margin: 0 0 dv($spacer, 2);
+}
+
+.__text {
+  grid-area: 1 / 3 span / 1;
+}
+
+.__input {
+  grid-area: 2 / 2 span / 2;
+
+  padding: dv($spacer, 2) $spacer;
+
+  border-radius: 0;
+  border: solid 1px #c4c4c4;
+  outline: none;
+
+  appearance: none;
+
+  &:focus {
+    border-color: $primary;
+  }
+}
+
+.__btn {
+  grid-area: 2 / 3 /3;
+
+  padding: 0 rem(24);
+
+  color: $light;
+
+  border: none;
+  border-radius: 2rem;
+  background: $primary;
+
+  &:hover {
+    background: $primary-dark;
+  }
+}
+
+.__result {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: $spacer;
+
+  margin-top: $spacer;
+
+  &-it {
+    background: unset;
+
+    strong {
+      color: $primary;
+    }
+  }
+}
+
+
+@include min-wide(desktopSm){
+  :host{
+    transform: scale(1.3);
+  }
+}

@@ -1,0 +1,27 @@
+@import "core";
+
+.__header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: $spacer;
+
+  width: 100%;
+
+  padding: dv($spacer, 2) $spacer;
+
+  svg {
+    max-width: rem(260);
+    height: 80px;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: rem(18);
+    letter-spacing: -0.5px;
+
+    opacity: .5;
+  }
+}
+

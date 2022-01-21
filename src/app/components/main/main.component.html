@@ -1,0 +1,12 @@
+<div class="__wrap">
+  <p class="__text">Проверку гласных и негласных в строке</p>
+  <input class="__input" type="text" placeholder="Ведите проверяемую строку" [(ngModel)]="values">
+
+  <button class="__btn" type="button" (click)="onCalc()" >Подсчитать</button>
+
+  <div class="__result">
+    <mark class='__result-it --def'>Дефортное значение: <strong>{{ defaults }}</strong></mark>
+    <mark class='__result-it --vowels'>Гласные : <strong>{{ vowels }}</strong></mark>
+    <mark class='__result-it --consonants'>Согласные : <strong>{{ consonants }}</strong></mark>
+  </div>
+</div>
